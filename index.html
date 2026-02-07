@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forever With You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            text-align: center;
+            padding-top: 100px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .no {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Will you be my Valentine?</h2>
+
+    <button class="yes" onclick="yesClicked()">Yes</button>
+    <button class="no" onclick="noClicked()">No</button>
+
+    <p id="message"></p>
+
+    <script>
+        function yesClicked() {
+            document.getElementById("message").innerText =
+            "I love you, babe 💖💋😘";
+        }
+
+        function noClicked() {
+            document.getElementById("message").innerText =
+            "Nice try 😌 This option is not valid. Choose Yes 💕";
+        }
+    </script>
+
+</body>
+</html>
